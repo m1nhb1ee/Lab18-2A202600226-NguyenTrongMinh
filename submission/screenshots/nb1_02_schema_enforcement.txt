@@ -1,0 +1,4 @@
+# NB1: Schema Enforcement Blocks Bad Write
+# Student: Nguyen Trong Minh — 2A202600226
+
+BLOCKED by schema enforcement (expected): Exception: Cast error: Cannot cast string 'thirty' to value of Int64 type

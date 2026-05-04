@@ -1,0 +1,4 @@
+# NB2: Small File Problem — 200 files before OPTIMIZE
+# Student: Nguyen Trong Minh — 2A202600226
+
+Files before OPTIMIZE: 200

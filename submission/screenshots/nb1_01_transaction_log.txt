@@ -1,0 +1,28 @@
+# NB1: Delta Table + Transaction Log
+# Student: Nguyen Trong Minh — 2A202600226
+
+shape: (3, 4)
+┌─────┬─────────┬─────┬────────┐
+│ id  ┆ name    ┆ age ┆ city   │
+│ --- ┆ ---     ┆ --- ┆ ---    │
+│ i64 ┆ str     ┆ i64 ┆ str    │
+╞═════╪═════════╪═════╪════════╡
+│ 1   ┆ alice   ┆ 30  ┆ Hanoi  │
+│ 2   ┆ bob     ┆ 25  ┆ HCMC   │
+│ 3   ┆ charlie ┆ 35  ┆ Danang │
+└─────┴─────────┴─────┴────────┘
+
+History:
+  v0  WRITE  {'execution_time_ms': 3, 'num_added_files': 1, 'num_added_rows': 3, 'num_partitions': 0, 'num_removed_files': 0}
+
+
+--- _delta_log/ files ---
+00000000000000000000.json
+00000000000000000001.json
+
+=== 00000000000000000000.json ===
+{"protocol":{"minReaderVersion":1,"minWriterVersion":2}}
+{"metaData":{"id":"09805556-9dd2-4922-bd44-a0c0d77aea06","name":null,"description":null,"format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"id\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"age\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"city\",\"type\":\"string\",\"nulla
+
+=== 00000000000000000001.json ===
+{"metaData":{"id":"09805556-9dd2-4922-bd44-a0c0d77aea06","name":null,"description":null,"format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"id\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"age\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"city\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"tier\",\"type\":\

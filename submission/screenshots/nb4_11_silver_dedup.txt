@@ -1,0 +1,4 @@
+# NB4: Silver < Bronze — dedup observable
+# Student: Nguyen Trong Minh — 2A202600226
+
+Silver rows: 190,052  (Bronze 200,000 → dedup dropped 9,948)

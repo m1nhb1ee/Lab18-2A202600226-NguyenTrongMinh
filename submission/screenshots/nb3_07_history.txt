@@ -1,0 +1,10 @@
+# NB3: history() — 5 versions including RESTORE
+# Student: Nguyen Trong Minh — 2A202600226
+
+  v 4  RESTORE                  
+  v 3  WRITE                    
+  v 2  MERGE                    
+  v 1  WRITE                    
+  v 0  WRITE                    
+
+Total versions: 5  (target ≥ 5)

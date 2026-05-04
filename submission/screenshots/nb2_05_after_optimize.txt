@@ -1,0 +1,4 @@
+# NB2: After OPTIMIZE+ZORDER — numFiles reduced
+# Student: Nguyen Trong Minh — 2A202600226
+
+Files after OPTIMIZE+ZORDER: 55  (was 200)

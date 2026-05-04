@@ -1,0 +1,10 @@
+# NB2: Benchmark Results — Speedup and File Pruning
+# Student: Nguyen Trong Minh — 2A202600226
+
+BEFORE OPTIMIZE            count=5  median= 120.6 ms  (n=3)
+
+
+AFTER OPTIMIZE+ZORDER      count=5  median=  12.8 ms  (n=3)
+
+Speedup: 9.4×  (target ≥ 3×)
+File reduction: 200 → 55  (4× fewer)

@@ -1,0 +1,24 @@
+# NB1: Schema Evolution — tier column added
+# Student: Nguyen Trong Minh — 2A202600226
+
+shape: (4, 5)
+┌─────┬─────────┬─────┬────────┬─────────┐
+│ id  ┆ name    ┆ age ┆ city   ┆ tier    │
+│ --- ┆ ---     ┆ --- ┆ ---    ┆ ---     │
+│ i64 ┆ str     ┆ i64 ┆ str    ┆ str     │
+╞═════╪═════════╪═════╪════════╪═════════╡
+│ 1   ┆ alice   ┆ 30  ┆ Hanoi  ┆ null    │
+│ 2   ┆ bob     ┆ 25  ┆ HCMC   ┆ null    │
+│ 3   ┆ charlie ┆ 35  ┆ Danang ┆ null    │
+│ 4   ┆ dan     ┆ 28  ┆ Hue    ┆ premium │
+└─────┴─────────┴─────┴────────┴─────────┘
+
+
+┌─────────┬──────────────┐
+│  tier   │ count_star() │
+│ varchar │    int64     │
+├─────────┼──────────────┤
+│ NULL    │            3 │
+│ premium │            1 │
+└─────────┴──────────────┘
+

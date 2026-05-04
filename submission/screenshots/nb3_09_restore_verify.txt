@@ -1,0 +1,9 @@
+# NB3: RESTORE rollback + score<0 = 0
+# Student: Nguyen Trong Minh — 2A202600226
+
+v0 row count: 100000
+v1 schema:    ['customer_id', 'status', 'score', 'tier']
+
+
+RESTORE → v2: 0.02s   (target < 30s)
+Rows with score<0 after restore: 0  (expected 0)

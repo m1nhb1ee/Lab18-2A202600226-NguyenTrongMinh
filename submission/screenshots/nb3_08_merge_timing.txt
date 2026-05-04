@@ -1,0 +1,4 @@
+# NB3: MERGE 100K rows — timing < 60s
+# Student: Nguyen Trong Minh — 2A202600226
+
+MERGE 100K rows: 0.09s
